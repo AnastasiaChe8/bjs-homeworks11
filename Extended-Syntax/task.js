@@ -39,10 +39,16 @@ function calculateDrinkTask(){
 }
 
 function askDrink(name,dateOfBirthday){
-    // код для задачи №2 писать здесь
-    //console.log(result)
-    //return result;
+  let today = new Date();
+  let nowYear = dateOfBirthday.getFullYear();
+  let result = today.getFullYear() - nowYear;
+if (result > 18) {
+  console.log ("Не желаете ли олд-фэшн " + name + "?");
+} else {
+  console.log ("Сожалею," + name + " , но я не могу вам продать алкоголь. Зато могу предложить вам замечательный клюквенный компот!");
 }
+}
+  
 
 function calculateAverageRating(){
     let marks = window.marks.value.split("").map(Number).filter((n)=> !isNaN(n) && n > 0);
@@ -51,8 +57,9 @@ function calculateAverageRating(){
 }
 
 function getAverageMark(marks){
-    // код для задачи №3 писать здесь
-    //return averageMark;
-}
+        for (let i=0; i<5; i++) {
+          console.log(marks)
+        }
 
-getResult(2,8,2);
+    }
+
