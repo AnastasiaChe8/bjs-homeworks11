@@ -18,7 +18,7 @@ function getResult(a,b,c){
     if (d < 0) {
         console.log ("Уравнение не имеет корней");
     }
-    else if (d == 0) {
+    if else (d == 0) {
         x= -b / (2*a);
         console.log ("Уравнение имеет один корень = " + x);
     }
